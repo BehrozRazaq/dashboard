@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/dashboard/__init__.py
+src/dashboard/app.py
+src/dashboard/collectors.py
+src/dashboard/config.py
+src/dashboard/main.py
+src/dashboard/models.py
+src/media_ops_dashboard.egg-info/PKG-INFO
+src/media_ops_dashboard.egg-info/SOURCES.txt
+src/media_ops_dashboard.egg-info/dependency_links.txt
+src/media_ops_dashboard.egg-info/entry_points.txt
+src/media_ops_dashboard.egg-info/requires.txt
+src/media_ops_dashboard.egg-info/top_level.txt

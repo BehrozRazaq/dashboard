@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: media-ops-dashboard
+Version: 0.1.0
+Summary: TUI dashboard for media services, torrents, and host metrics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: textual>=0.86.1
+Requires-Dist: rich>=13.8.1
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: asciimatics>=1.15.0
+
+# Media Ops Dashboard (TUI)
+
+A dense, cozy, muted-purple terminal dashboard for:
+
+- Sonarr, Radarr, Plex, Home Assistant, Prowlarr uptime (HTTP availability uptime)
+- Ongoing torrents from qBittorrent
+- Local Windows host metrics (CPU, memory, network)
+
+Built with `textual` + `rich` + `asyncio`, using `psutil` and `httpx`.
+
+## Visual style
+
+- Muted purple palette with soft, low-glare text
+- Dense pro dashboard layout for fast scanning
+- Smooth transitions on metric and progress changes
+- Motion mode toggle: `normal` / `reduced` / `off`
+
+## Setup
+
+1. Create and activate a Python 3.10+ environment.
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Copy `.env.example` to `.env` and fill values.
+4. Run:
+
+```bash
+python -m dashboard.main
+```
+
+or:
+
+```bash
+dashboard
+```
+
+## Controls
+
+- `q`: quit
+- `r`: manual refresh
+- `m`: cycle motion mode (`normal` → `reduced` → `off`)
+
+## Notes
+
+- Uptime is based on successful HTTP/API reachability duration.
+- If a service is down, the app shows degraded/down state without stopping.
+- Home Assistant is monitored as an application endpoint only.

@@ -1,0 +1,184 @@
+Screen {
+    background: #161222;
+    color: #cfc6e8;
+}
+
+Header {
+    background: #241b38;
+    color: #e5dcff;
+    text-style: bold;
+}
+
+Footer {
+    background: #241b38;
+    color: #cfc6e8;
+}
+
+#root {
+    layout: vertical;
+    padding: 0 1;
+}
+
+#top_strip {
+    height: 5;
+    margin-bottom: 1;
+}
+
+#middle {
+    height: 1fr;
+}
+
+#services_panel {
+    width: 1fr;
+    margin-right: 1;
+}
+
+#torrents_panel {
+    width: 2fr;
+}
+
+#metrics_panel {
+    height: 9;
+    margin-top: 1;
+}
+
+.focus-panel {
+    border: round #4f4176;
+    background: #181327;
+}
+
+.focus-panel:focus {
+    border: round #c7b4ff;
+    background: #231a36;
+    tint: #f5eeff 8%;
+}
+
+Static {
+    color: #cec3e6;
+}
+
+CommandMenuScreen {
+    align: center middle;
+    background: #00000088;
+}
+
+#command_menu_modal {
+    width: 46;
+    height: 12;
+    border: round #c7b4ff;
+    background: #1b1430;
+    padding: 1 2;
+}
+
+#command_menu_title {
+    color: #e8deff;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#command_menu_item {
+    color: #d4c7f1;
+}
+
+.command_menu_item {
+    color: #d4c7f1;
+}
+
+#command_menu_hint {
+    color: #ae9fd1;
+    margin-top: 1;
+}
+
+#pacman_root {
+    align: center middle;
+    layout: vertical;
+    padding: 1;
+}
+
+#pacman_title {
+    color: #e8deff;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#pacman_score {
+    color: #d8cbf2;
+    margin-bottom: 1;
+}
+
+#pacman_canvas {
+    width: 40;
+    border: round #8f7ad4;
+    background: #17112a;
+    color: #d4c6f1;
+    padding: 0 1;
+}
+
+#pacman_hint {
+    color: #ae9fd1;
+    margin-top: 1;
+}
+
+#snake_root {
+    layout: vertical;
+    width: 100%;
+    height: 100%;
+    padding: 1 2;
+}
+
+#snake_title {
+    color: #e8deff;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#snake_score {
+    color: #d8cbf2;
+    margin-bottom: 1;
+}
+
+#snake_canvas {
+    width: 100%;
+    height: 1fr;
+    border: round #8f7ad4;
+    background: #17112a;
+    color: #d4c6f1;
+    padding: 0 1;
+}
+
+#snake_hint {
+    color: #ae9fd1;
+    margin-top: 1;
+}
+
+#pong_root {
+    layout: vertical;
+    width: 100%;
+    height: 100%;
+    padding: 1 2;
+}
+
+#pong_title {
+    color: #e8deff;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#pong_score {
+    color: #d8cbf2;
+    margin-bottom: 1;
+}
+
+#pong_canvas {
+    width: 100%;
+    height: 1fr;
+    border: round #8f7ad4;
+    background: #17112a;
+    color: #d4c6f1;
+    padding: 0 1;
+}
+
+#pong_hint {
+    color: #ae9fd1;
+    margin-top: 1;
+}
